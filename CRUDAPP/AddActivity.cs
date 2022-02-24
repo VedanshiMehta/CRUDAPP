@@ -73,7 +73,7 @@ namespace CRUDAPP
                     Toast.MakeText(this, "No action performed", ToastLength.Short).Show();
                 }
                 Intent m = new Intent(this, typeof(MainActivity));
-                StartActivity(m); ;
+                StartActivity(m); 
 
             }
             else 
