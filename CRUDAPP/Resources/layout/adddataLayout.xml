@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/my_liberty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        tools:ignore="MissingDimension">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:id="@+id/toolbar2"
+            android:layout_height="?android:attr/actionBarSize"
+            android:minHeight="?android:attr/actionBarSize"
+            android:background="@color/my_darkblue"
+            android:theme="@android:style/ThemeOverlay.Material.ActionBar"
+            app:title="Employee Details"
+            android:layout_weight="4"
+            app:titleTextColor="#ffffff"
+            app:logo="@drawable/ic_employee"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="5dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="7"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:id="@+id/textView1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:gravity="left"
+                android:layout_gravity="right"
+                android:background="#ffffff"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/editText1"/>
+            <Space
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surname:"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="left"
+                android:id="@+id/textView2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Surname"
+                android:gravity="left"
+                android:background="#ffffff"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/editText2"/>
+
+            <Space
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department:"
+                android:layout_gravity="left"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:id="@+id/textView3"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Department"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/editText3"/>
+            <Space
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary:"
+                android:layout_gravity="left"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:id="@+id/textView4"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Salary"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:background="#ffffff"
+                android:inputType="number"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/editText4"/>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="MissingDimension">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/buttonA"
+                android:backgroundTint="@color/my_indigo"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
